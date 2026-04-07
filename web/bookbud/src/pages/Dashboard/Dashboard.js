@@ -30,7 +30,7 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    if (!user) { navigate('/?auth=login'); return; }
+    if (!user) { navigate('/'); return; }
     fetchBooks();
   }, [user, navigate, fetchBooks]);
 

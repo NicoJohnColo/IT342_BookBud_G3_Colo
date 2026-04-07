@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bb_background_light">#F5F0EB</color>
+    <color name="bb_badge_gray_bg">#F0EEEB</color>
+    <color name="bb_badge_gray_text">#666666</color>
+    <color name="bb_badge_hot_bg">#FFEAEA</color>
+    <color name="bb_badge_hot_text">#E53935</color>
+    <color name="bb_badge_topseller_bg">#E8F5E9</color>
+    <color name="bb_badge_topseller_text">#388E3C</color>
+    <color name="bb_card_white">#FFFFFF</color>
+    <color name="bb_input_bg">#FFFFFF</color>
+    <color name="bb_input_border">#E4DDD5</color>
+    <color name="bb_nav_bg">#FFFFFF</color>
+    <color name="bb_nav_selected">#F5821E</color>
+    <color name="bb_nav_unselected">#AAAAAA</color>
+    <color name="bb_orange">#F5821E</color>
+    <color name="bb_orange_dark">#D4650A</color>
+    <color name="bb_orange_light">#FFF0E3</color>
+    <color name="bb_text_dark">#2D2D2D</color>
+    <color name="bb_text_light">#FFFFFF</color>
+    <color name="bb_text_muted">#9E9E9E</color>
+    <color name="color_dark">#2D2D2D</color>
+    <color name="color_gray_200">#E4DDD5</color>
+    <color name="color_gray_400">#9E9E9E</color>
+    <color name="color_primary">#F5821E</color>
+    <color name="color_primary_hover">#D4650A</color>
+    <color name="color_primary_light">#FFF0E3</color>
+    <color name="color_white">#FFFFFF</color>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_xl">16dp</dimen>
+    <dimen name="input_height">52dp</dimen>
+    <dimen name="padding_extra_large">24dp</dimen>
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="radius_lg">24dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_xl">32dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <string name="app_name">BOOKBUD</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="email_label">Email</string>
+    <string name="featured_books">Featured Books</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_description">Enter your email and we\'ll send you a reset link</string>
+    <string name="get_started_image_description">Stack of books with plant decoration</string>
+    <string name="good_morning">Good morning ☀️</string>
+    <string name="have_account_login">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="no_account_register">Don\'t have an account?</string>
+    <string name="recently_listed">Recently Listed</string>
+    <string name="register">Register</string>
+    <string name="see_all">See all →</string>
+    <string name="send">SEND</string>
+    <string name="sign_in">Sign in</string>
+    <string name="tagline">Read more for less</string>
+    <style name="ButtonStyle.BookBud" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.LabelLarge</item>
+        <item name="android:textColor">@color/color_dark</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="rippleColor">@color/color_primary_light</item>
+    </style>
+    <style name="ButtonStyle.BookBud.Primary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@color/color_primary</item>
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.LabelLarge</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+    </style>
+    <style name="ButtonStyle.BookBud.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.LabelLarge</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    <style name="CardStyle.BookBud" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/radius_md</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/color_white</item>
+        <item name="strokeColor">@color/color_gray_200</item>
+    </style>
+    <style name="DividerStyle" parent="DividerStyle.BookBud"/>
+    <style name="DividerStyle.BookBud">
+        <item name="android:background">@color/color_gray_200</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="EditTextStyle.BookBud" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.BodyMedium</item>
+        <item name="android:textColor">@color/color_dark</item>
+        <item name="android:hint">@string/app_name</item>
+        <item name="android:textColorHint">@color/color_gray_400</item>
+    </style>
+    <style name="TextAppearance.BookBud.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_dark</item>
+    </style>
+    <style name="TextAppearance.BookBud.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_dark</item>
+    </style>
+    <style name="Theme.BookBud" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bb_orange</item>
+        <item name="colorPrimaryVariant">@color/bb_orange_dark</item>
+        <item name="colorOnPrimary">@color/bb_text_light</item>
+        <item name="android:windowBackground">@color/bb_card_white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.BookBud.Splash" parent="Theme.BookBud">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

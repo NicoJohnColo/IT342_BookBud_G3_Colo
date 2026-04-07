@@ -1,22 +1,45 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import bookService from '../../services/bookService';
+import { useAuth } from '../../context/AuthContext';
 import './LandingPage.css';
+
+import { validateEmail } from '../../utils/validators';
+
+// Local image assets
+import LandingBg from '../../components/imgs/landingBg.png';
+
+import About1 from '../../components/imgs/About1.png';
+import About2 from '../../components/imgs/About2.png';
+import About3 from '../../components/imgs/About3.png';
+import BuildReadImg from '../../components/imgs/BuildReadImg.png';
+
+import BothDieImg from '../../components/imgs/bothdie.png';
+import HarryImg from '../../components/imgs/harry.png';
+import NeverImg from '../../components/imgs/never.png';
+
+import ComicImg from '../../components/imgs/comic.png';
+import FictionImg from '../../components/imgs/fiction.png';
+import MangaImg from '../../components/imgs/manga.png';
+
+import Genre1 from '../../components/imgs/genre1.png';
+import Genre2 from '../../components/imgs/genre2.png';
+import Genre3 from '../../components/imgs/genre3.png';
+import Genre4 from '../../components/imgs/genre4.png';
 
 const GENRES = [
   {
     name: 'Manga',
-    img: 'https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?w=300&q=80',
+    img: MangaImg,
   },
   {
     name: 'Comics',
-    img: 'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=300&q=80',
+    img: ComicImg,
   },
   {
     name: 'Fiction',
-    img: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&q=80',
+    img: FictionImg,
   },
 ];
 
@@ -28,7 +51,7 @@ const SAMPLE_BOOKS = [
     condition: 'New',
     rentPrice: 45,
     salePrice: 300,
-    coverImage: 'https://covers.openlibrary.org/b/id/10110415-M.jpg',
+    coverImage: HarryImg,
   },
   {
     bookId: '2',
@@ -37,7 +60,7 @@ const SAMPLE_BOOKS = [
     condition: 'Good',
     rentPrice: 40,
     salePrice: 280,
-    coverImage: 'https://covers.openlibrary.org/b/id/8739161-M.jpg',
+    coverImage: NeverImg,
   },
   {
     bookId: '3',
@@ -46,41 +69,169 @@ const SAMPLE_BOOKS = [
     condition: 'New',
     rentPrice: 45,
     salePrice: 350,
-    coverImage: 'https://covers.openlibrary.org/b/id/10527843-M.jpg',
+    coverImage: BothDieImg,
   },
 ];
 
-const GALLERY = [
-  'https://covers.openlibrary.org/b/id/8739161-M.jpg',
-  'https://covers.openlibrary.org/b/id/260-M.jpg',
-  'https://covers.openlibrary.org/b/id/10527843-M.jpg',
-  'https://covers.openlibrary.org/b/id/10110415-M.jpg',
-];
+const GALLERY = [Genre1, Genre2, Genre3, Genre4];
 
 const LandingPage = () => {
   const navigate = useNavigate();
   const [books, setBooks] = useState(SAMPLE_BOOKS);
-  const [booksLoading, setBooksLoading] = useState(true);
+  const [showLogin, setShowLogin] = useState(false);
+  const [authMode, setAuthMode] = useState('login'); // 'login' | 'register' | 'forgot'
 
-  useEffect(() => {
-    bookService
-      .getAllBooks({ size: 3 })
-      .then((res) => {
-        if (res.data?.content?.length) {
-          setBooks(res.data.content);
-        }
-      })
-      .catch(() => {})
-      .finally(() => setBooksLoading(false));
-  }, []);
+  const { login, register, forgotPassword, loading, error, clearError } = useAuth();
+  const [loginForm, setLoginForm] = useState({ email: '', password: '' });
+  const [loginErrors, setLoginErrors] = useState({});
+
+  const [registerForm, setRegisterForm] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    agreed: false,
+  });
+  const [registerErrors, setRegisterErrors] = useState({});
+
+  const [forgotEmail, setForgotEmail] = useState('');
+  const [forgotError, setForgotError] = useState('');
+  const [forgotSubmitted, setForgotSubmitted] = useState(false);
+
+  const [authSuccess, setAuthSuccess] = useState('');
+
+  const openLogin = () => {
+    setAuthMode('login');
+    setShowLogin(true);
+    setAuthSuccess('');
+  };
+
+  const openRegister = () => {
+    setAuthMode('register');
+    setShowLogin(true);
+    setAuthSuccess('');
+  };
+
+  const openForgot = () => {
+    setAuthMode('forgot');
+    setShowLogin(true);
+    setAuthSuccess('');
+    setForgotSubmitted(false);
+  };
+
+  const closeLogin = () => {
+    setShowLogin(false);
+    setLoginErrors({});
+    setLoginForm({ email: '', password: '' });
+    setRegisterErrors({});
+    setRegisterForm({ username: '', email: '', password: '', confirmPassword: '', agreed: false });
+    setForgotEmail('');
+    setForgotError('');
+    setForgotSubmitted(false);
+    setAuthSuccess('');
+    if (error) clearError();
+  };
+
+  const validateLogin = () => {
+    const errs = {};
+    if (!loginForm.email) errs.email = 'Email is required';
+    else if (!/\S+@\S+\.\S+/.test(loginForm.email)) errs.email = 'Enter a valid email';
+    if (!loginForm.password) errs.password = 'Password is required';
+    return errs;
+  };
+
+  const handleLoginChange = (e) => {
+    const { name, value } = e.target;
+    setLoginForm((prev) => ({ ...prev, [name]: value }));
+    if (loginErrors[name]) setLoginErrors((prev) => ({ ...prev, [name]: '' }));
+    if (error) clearError();
+  };
+
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    const errs = validateLogin();
+    if (Object.keys(errs).length) { setLoginErrors(errs); return; }
+    try {
+      await login({ email: loginForm.email, password: loginForm.password });
+      setAuthSuccess('Login successful! Redirecting...');
+      setTimeout(() => {
+        setShowLogin(false);
+        navigate('/dashboard');
+      }, 800);
+    } catch {
+      /* error handled by context */
+    }
+  };
+
+  const validateRegister = () => {
+    const errs = {};
+    if (!registerForm.username || registerForm.username.length < 3)
+      errs.username = 'Username must be at least 3 characters';
+    if (!registerForm.email || !/\S+@\S+\.\S+/.test(registerForm.email))
+      errs.email = 'Enter a valid email';
+    if (!registerForm.password || registerForm.password.length < 8)
+      errs.password = 'Password must be at least 8 characters';
+    else if (!/(?=.*[A-Z])(?=.*\d)/.test(registerForm.password))
+      errs.password = 'Password must contain at least one uppercase letter and one digit';
+    if (registerForm.password !== registerForm.confirmPassword)
+      errs.confirmPassword = 'Passwords do not match';
+    if (!registerForm.agreed) errs.agreed = 'You must agree to the terms';
+    return errs;
+  };
+
+  const handleRegisterChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setRegisterForm((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+    if (registerErrors[name]) setRegisterErrors((prev) => ({ ...prev, [name]: '' }));
+    if (error) clearError();
+  };
+
+  const handleRegisterSubmit = async (e) => {
+    e.preventDefault();
+    const errs = validateRegister();
+    if (Object.keys(errs).length) { setRegisterErrors(errs); return; }
+    try {
+      await register({
+        username: registerForm.username,
+        email: registerForm.email,
+        password: registerForm.password,
+        confirmPassword: registerForm.confirmPassword,
+      });
+      setAuthSuccess('Account created! You can now sign in.');
+      setAuthMode('login');
+      setRegisterErrors({});
+    } catch {
+      /* error handled by context */
+    }
+  };
+
+  const handleForgotSubmit = async (e) => {
+    e.preventDefault();
+    const result = validateEmail(forgotEmail);
+    if (!result.valid) {
+      setForgotError(result.message);
+      return;
+    }
+    try {
+      await forgotPassword({ email: forgotEmail });
+      setForgotSubmitted(true);
+      setForgotError('');
+      setAuthSuccess('');
+    } catch {
+      /* error handled by context */
+    }
+  };
 
   return (
     <div className="landing">
-      <Navbar />
+      <Navbar onSignInClick={openLogin} />
 
       {/* ===== HERO ===== */}
       <section id="home" className="hero">
-        <div className="hero-bg" />
+        <div className="hero-bg" style={{ backgroundImage: `url(${LandingBg})` }} />
         <div className="hero-card">
           <p className="hero-eyebrow">Discover New Listings</p>
           <h1 className="hero-title">Find Your Next<br />Favorite Book</h1>
@@ -124,9 +275,9 @@ const LandingPage = () => {
         </div>
 
         <div className="about-images">
-          <img src="https://images.unsplash.com/photo-1495640452828-3df6795cf69b?w=400&q=80" alt="books" />
-          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&q=80" alt="books" />
-          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80" alt="books" />
+          <img src={About1} alt="Readers exchanging books" />
+          <img src={About2} alt="Stack of books" />
+          <img src={About3} alt="Readers enjoying books" />
         </div>
 
         <div className="about-blurb">
@@ -141,8 +292,8 @@ const LandingPage = () => {
           <div className="about-img-wrap">
             <div className="about-img-circle" />
             <img
-              src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=460&q=80"
-              alt="Reader"
+              src={BuildReadImg}
+              alt="Build your reading list"
               className="about-img"
             />
           </div>
@@ -176,7 +327,7 @@ const LandingPage = () => {
             <div key={book.bookId} className="book-card">
               <div className="book-cover">
                 <img
-                  src={`https://covers.openlibrary.org/b/id/260-M.jpg`}
+                  src={book.coverImage || 'https://covers.openlibrary.org/b/id/260-M.jpg'}
                   alt={book.title}
                   onError={(e) => { e.target.src = 'https://covers.openlibrary.org/b/id/260-M.jpg'; }}
                 />
@@ -190,8 +341,8 @@ const LandingPage = () => {
                 {book.priceRent && <p className="book-price">Rent: ₱{book.priceRent}/week</p>}
                 {book.priceSale && <p className="book-price">Sale: ₱{book.priceSale}</p>}
                 <div className="book-actions">
-                  <button className="btn-rent" onClick={() => navigate('/login')}>Rent</button>
-                  <button className="btn-buy" onClick={() => navigate('/login')}>Buy</button>
+                  <button className="btn-rent" onClick={openLogin}>Rent</button>
+                  <button className="btn-buy" onClick={openLogin}>Buy</button>
                 </div>
               </div>
             </div>
@@ -213,6 +364,239 @@ const LandingPage = () => {
           ))}
         </div>
       </section>
+
+      {showLogin && (
+        <div className="auth-modal-overlay" onClick={closeLogin}>
+          <div className="auth-modal-inner" onClick={(e) => e.stopPropagation()}>
+            <div className="auth-card">
+              <button className="auth-modal-close" onClick={closeLogin} aria-label="Close sign in">
+                ×
+              </button>
+              <h2 className="auth-heading">{authMode === 'login' ? 'Welcome Back' : 'Create Account'}</h2>
+              <p className="auth-subtitle">
+                {authMode === 'login'
+                  ? 'Sign in to your BookBud account'
+                  : 'Join BookBud and start reading for less'}
+              </p>
+
+              {error && <div className="auth-error-banner">{error}</div>}
+              {authSuccess && <div className="auth-alert success">{authSuccess}</div>}
+
+              {authMode === 'login' && (
+                <form onSubmit={handleLoginSubmit} noValidate>
+                  <div className="form-group">
+                    <label htmlFor="lp-email">Email</label>
+                    <input
+                      id="lp-email"
+                      type="email"
+                      name="email"
+                      value={loginForm.email}
+                      onChange={handleLoginChange}
+                      placeholder="test1@gmail.com"
+                      className={loginErrors.email ? 'input-error' : ''}
+                    />
+                    {loginErrors.email && <span className="input-error-msg">{loginErrors.email}</span>}
+                  </div>
+
+                  <div className="form-group">
+                    <div className="form-row-between">
+                      <label htmlFor="lp-password">Password</label>
+                      <button
+                        type="button"
+                        className="forgot-link"
+                        onClick={openForgot}
+                      >
+                        Forgot Password?
+                      </button>
+                    </div>
+                    <input
+                      id="lp-password"
+                      type="password"
+                      name="password"
+                      value={loginForm.password}
+                      onChange={handleLoginChange}
+                      placeholder="••••••••••••••"
+                      className={loginErrors.password ? 'input-error' : ''}
+                    />
+                    {loginErrors.password && <span className="input-error-msg">{loginErrors.password}</span>}
+                  </div>
+
+                  <button type="submit" className="auth-btn" disabled={loading}>
+                    {loading ? <span className="auth-spinner" /> : <><span>Sign in</span><span className="auth-arrow">→</span></>}
+                  </button>
+                </form>
+              )}
+
+              {authMode === 'register' && (
+                <form onSubmit={handleRegisterSubmit} noValidate>
+                  <div className="form-group">
+                    <label htmlFor="lp-username">Username</label>
+                    <input
+                      id="lp-username"
+                      type="text"
+                      name="username"
+                      value={registerForm.username}
+                      onChange={handleRegisterChange}
+                      placeholder="Username"
+                      className={registerErrors.username ? 'input-error' : ''}
+                    />
+                    {registerErrors.username && <span className="input-error-msg">{registerErrors.username}</span>}
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="lp-reg-email">Email</label>
+                    <input
+                      id="lp-reg-email"
+                      type="email"
+                      name="email"
+                      value={registerForm.email}
+                      onChange={handleRegisterChange}
+                      placeholder="test1@gmail.com"
+                      className={registerErrors.email ? 'input-error' : ''}
+                    />
+                    {registerErrors.email && <span className="input-error-msg">{registerErrors.email}</span>}
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="lp-reg-password">Password</label>
+                    <input
+                      id="lp-reg-password"
+                      type="password"
+                      name="password"
+                      value={registerForm.password}
+                      onChange={handleRegisterChange}
+                      placeholder="••••••••••••••"
+                      className={registerErrors.password ? 'input-error' : ''}
+                    />
+                    {registerErrors.password && <span className="input-error-msg">{registerErrors.password}</span>}
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="lp-reg-confirmPassword">Confirm Password</label>
+                    <input
+                      id="lp-reg-confirmPassword"
+                      type="password"
+                      name="confirmPassword"
+                      value={registerForm.confirmPassword}
+                      onChange={handleRegisterChange}
+                      placeholder="••••••••••••••"
+                      className={registerErrors.confirmPassword ? 'input-error' : ''}
+                    />
+                    {registerErrors.confirmPassword && (
+                      <span className="input-error-msg">{registerErrors.confirmPassword}</span>
+                    )}
+                  </div>
+
+                  <div className="checkbox-group">
+                    <input
+                      id="lp-agreed"
+                      type="checkbox"
+                      name="agreed"
+                      checked={registerForm.agreed}
+                      onChange={handleRegisterChange}
+                    />
+                    <label htmlFor="lp-agreed">
+                      By signing up you agree to our{' '}
+                      <Link to="#!">Terms</Link>,{' '}
+                      <Link to="#!">Privacy Policy</Link>, and{' '}
+                      <Link to="#!">Cookie Use</Link>
+                    </label>
+                  </div>
+                  {registerErrors.agreed && (
+                    <span className="input-error-msg" style={{ marginBottom: '10px', display: 'block' }}>
+                      {registerErrors.agreed}
+                    </span>
+                  )}
+
+                  <button type="submit" className="auth-btn" disabled={loading}>
+                    {loading ? 'Creating account...' : <><span>Create</span><span className="auth-arrow">→</span></>}
+                  </button>
+                </form>
+              )}
+
+              {authMode === 'forgot' && (
+                <form onSubmit={handleForgotSubmit} noValidate>
+                  {!forgotSubmitted ? (
+                    <>
+                      <div className="form-group">
+                        <label htmlFor="lp-forgot-email">Email</label>
+                        <input
+                          id="lp-forgot-email"
+                          type="email"
+                          name="forgotEmail"
+                          value={forgotEmail}
+                          onChange={(e) => {
+                            setForgotEmail(e.target.value);
+                            if (forgotError) setForgotError('');
+                            if (error) clearError();
+                          }}
+                          placeholder="you@example.com"
+                          className={forgotError ? 'input-error' : ''}
+                        />
+                        {forgotError && <span className="input-error-msg">{forgotError}</span>}
+                      </div>
+
+                      <button type="submit" className="auth-btn" disabled={loading}>
+                        {loading ? <span className="auth-spinner" /> : <><span>Send</span><span className="auth-arrow">→</span></>}
+                      </button>
+                    </>
+                  ) : (
+                    <div className="success-state">
+                      <div className="check-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#22C55E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </div>
+                      <p className="success-message">
+                        We've sent a password reset link to <strong>{forgotEmail}</strong>. Please check your inbox.
+                      </p>
+                    </div>
+                  )}
+                </form>
+              )}
+
+              <p className="auth-footer-text">
+                {authMode === 'login' && (
+                  <>
+                    I don't have an account ?&nbsp;
+                    <button
+                      className="auth-link"
+                      type="button"
+                      onClick={() => { setAuthMode('register'); setAuthSuccess(''); }}
+                    >
+                      Sign up
+                    </button>
+                  </>
+                )}
+                {authMode === 'register' && (
+                  <>
+                    Already have an account?&nbsp;
+                    <button
+                      className="auth-link"
+                      type="button"
+                      onClick={() => { setAuthMode('login'); setAuthSuccess(''); }}
+                    >
+                      Sign in
+                    </button>
+                  </>
+                )}
+                {authMode === 'forgot' && (
+                  <>
+                    Back to Login&nbsp;
+                    <button
+                      className="auth-link"
+                      type="button"
+                      onClick={() => { setAuthMode('login'); setAuthSuccess(''); setForgotSubmitted(false); }}
+                    >
+                      Sign in
+                    </button>
+                  </>
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>

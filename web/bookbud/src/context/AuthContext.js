@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
       const res = await authService.register(formData);
       return res;
     } catch (err) {
-      const msg = err.response?.data?.message || 'Registration failed.';
+      const msg = err.response?.data?.error?.message || err.response?.data?.message || 'Registration failed.';
       setError(msg);
       throw err;
     } finally {
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
       setUser(res.data.user);
       return res;
     } catch (err) {
-      const msg = err.response?.data?.message || 'Login failed.';
+      const msg = err.response?.data?.error?.message || err.response?.data?.message || 'Login failed.';
       setError(msg);
       throw err;
     } finally {
@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }) => {
       const res = await authService.forgotPassword(data);
       return res;
     } catch (err) {
-      const msg = err.response?.data?.message || 'Request failed.';
+      const msg = err.response?.data?.error?.message || err.response?.data?.message || 'Request failed.';
       setError(msg);
       throw err;
     } finally {

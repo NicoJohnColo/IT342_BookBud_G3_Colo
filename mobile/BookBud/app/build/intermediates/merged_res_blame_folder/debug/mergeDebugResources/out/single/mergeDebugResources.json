@@ -1,66 +1,150 @@
 [
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_badge_hot.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_badge_hot.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_get_started_bg.png.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\get_started_bg.png"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_badge_topseller.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_badge_topseller.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\layout_activity_get_started.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\layout\\activity_get_started.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_nav_profile.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_nav_profile.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_primary_button.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_primary_button.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_nav_home.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_nav_home.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_input_field.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_input_field.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/drawable_ic_launcher_background.xml.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\font_dm_sans.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\font\\dm_sans.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\layout\\activity_register.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/xml_backup_rules.xml.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/xml/backup_rules.xml"
+        "merged": "edu.cit.colo.bookbud.app-debug-35:/layout_activity_register.xml.flat",
+        "source": "edu.cit.colo.bookbud.app-main-37:/layout/activity_register.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/xml_data_extraction_rules.xml.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_nav_listings.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_nav_listings.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_nav_chats.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_nav_chats.xml"
     },
     {
-        "merged": "edu.cit.colo.bookbud.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "edu.cit.colo.bookbud.app-main-46:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\anim_fade_in_delayed.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\anim\\fade_in_delayed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_book_cover_placeholder.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_book_cover_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_btn_get_started.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\btn_get_started.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_login_forget_bg.png.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\login_forget_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_recently_listed_icon.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_recently_listed_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_badge_gray.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_badge_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\color\\nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\anim_scale_up_hover.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\anim\\scale_up_hover.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_eye_off.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_eye_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_book_card.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_book_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_register_bg.png.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\register_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_stat_card.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_stat_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\animator_button_scale.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\animator\\button_scale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\anim_fade_in_up.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\anim\\fade_in_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\font_playfair_display.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\font\\playfair_display.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_eye_on.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_eye_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_ic_nav_explore.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\ic_nav_explore.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-debug-35:\\drawable_bg_forgot_card.xml.flat",
+        "source": "C:\\Users\\Nicoj\\.gradle\\daemon\\8.4\\edu.cit.colo.bookbud.app-main-37:\\drawable\\bg_forgot_card.xml"
     }
 ]

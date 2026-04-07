@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state: darker orange with ripple -->
+    <item android:state_pressed="true">
+        <ripple android:color="@color/color_primary_hover">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/color_primary_hover" />
+                <corners android:radius="@dimen/radius_lg" />
+            </shape>
+        </ripple>
+    </item>
+    <!-- Focused state: with ripple -->
+    <item android:state_focused="true">
+        <ripple android:color="@color/color_primary_hover">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/color_primary" />
+                <corners android:radius="@dimen/radius_lg" />
+            </shape>
+        </ripple>
+    </item>
+    <!-- Default state: normal orange -->
+    <item>
+        <ripple android:color="@color/color_primary_hover">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/color_primary" />
+                <corners android:radius="@dimen/radius_lg" />
+            </shape>
+        </ripple>
+    </item>
+</selector>

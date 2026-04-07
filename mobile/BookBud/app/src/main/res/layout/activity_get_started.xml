@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStartedActivity">
+
+    <!-- Full-screen background books image -->
+    <ImageView
+        android:id="@+id/getStartedBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/get_started_bg"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/get_started_image_description" />
+
+    <!-- Content overlay -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo text at top -->
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:letterSpacing="0.15"
+            android:text="@string/app_name"
+            android:textColor="@color/bb_orange"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:alpha="0" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/tagline"
+            android:textSize="14sp"
+            android:textColor="@color/bb_text_dark"
+            android:alpha="0" />
+
+        <!-- Spacer pushes button to bottom -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- GET STARTED button -->
+        <Button
+            android:id="@+id/getStartedButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/btn_get_started"
+            android:backgroundTint="@null"
+            android:letterSpacing="0.12"
+            android:text="GET STARTED"
+            android:textColor="@color/bb_text_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:elevation="6dp"
+            android:alpha="0" />
+
+    </LinearLayout>
+
+</FrameLayout>

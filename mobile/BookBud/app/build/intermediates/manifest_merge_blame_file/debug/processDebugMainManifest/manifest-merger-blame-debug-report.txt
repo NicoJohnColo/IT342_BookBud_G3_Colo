@@ -8,138 +8,153 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d28b317e20ba8385539468367d2081fe\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-12        android:name="edu.cit.colo.bookbud.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d28b317e20ba8385539468367d2081fe\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d28b317e20ba8385539468367d2081fe\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="edu.cit.colo.bookbud.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d28b317e20ba8385539468367d2081fe\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d28b317e20ba8385539468367d2081fe\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d747d5ab1d8d647180988b19e29d36e0\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+14        android:name="edu.cit.colo.bookbud.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d747d5ab1d8d647180988b19e29d36e0\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d747d5ab1d8d647180988b19e29d36e0\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 16
-17    <application
-17-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:5:5-26:19
-18        android:allowBackup="true"
-18-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d28b317e20ba8385539468367d2081fe\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:9:9-43
+17    <uses-permission android:name="edu.cit.colo.bookbud.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d747d5ab1d8d647180988b19e29d36e0\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d747d5ab1d8d647180988b19e29d36e0\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:6:5-43:19
+20        android:allowBackup="true"
+20-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.13.1] C:\Users\Nicoj\.gradle\caches\transforms-3\d747d5ab1d8d647180988b19e29d36e0\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:icon="@android:drawable/sym_def_app_icon"
+24-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:8:9-58
 25        android:label="@string/app_name"
-25-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:11:9-54
-27        android:supportsRtl="true"
-27-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:12:9-35
-28        android:theme="@style/Theme.BookBud" >
-28-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:13:9-45
-29        <activity
-29-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:15:9-25:20
-30            android:name="edu.cit.colo.bookbud.MainActivity"
-30-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:16:13-41
-31            android:exported="true"
-31-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:17:13-36
-32            android:label="@string/app_name"
-32-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:18:13-45
-33            android:theme="@style/Theme.BookBud" >
-33-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:19:13-49
-34            <intent-filter>
-34-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:20:13-24:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:21:17-69
-35-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:21:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:23:17-77
-37-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:23:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity
-40-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Nicoj\.gradle\caches\transforms-3\49c5700970ad372d43bcb6aabfcd49f6\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-41            android:name="androidx.compose.ui.tooling.PreviewActivity"
-41-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Nicoj\.gradle\caches\transforms-3\49c5700970ad372d43bcb6aabfcd49f6\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-42            android:exported="true" />
-42-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Nicoj\.gradle\caches\transforms-3\49c5700970ad372d43bcb6aabfcd49f6\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-43        <activity
-43-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\Nicoj\.gradle\caches\transforms-3\283e41960b2699086cea694aa8669046\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:23:9-25:39
-44            android:name="androidx.activity.ComponentActivity"
-44-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\Nicoj\.gradle\caches\transforms-3\283e41960b2699086cea694aa8669046\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:24:13-63
-45            android:exported="true" />
-45-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\Nicoj\.gradle\caches\transforms-3\283e41960b2699086cea694aa8669046\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:25:13-36
-46
-47        <provider
-47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-49            android:authorities="edu.cit.colo.bookbud.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-51            <meta-data
-51-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\8d37982ea9185f41e53704874f4ee1ff\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Nicoj\.gradle\caches\transforms-3\ec2d48ea7bc9c661ce09249471451362\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Nicoj\.gradle\caches\transforms-3\ec2d48ea7bc9c661ce09249471451362\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
-56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Nicoj\.gradle\caches\transforms-3\ec2d48ea7bc9c661ce09249471451362\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
-57            <meta-data
-57-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-58                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-59                android:value="androidx.startup" />
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-60        </provider>
-61
-62        <receiver
-62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-63            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-63-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-64            android:directBootAware="false"
-64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-65            android:enabled="true"
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-66            android:exported="true"
-66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-67            android:permission="android.permission.DUMP" >
-67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-68            <intent-filter>
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-69                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-70            </intent-filter>
-71            <intent-filter>
-71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-72                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-73            </intent-filter>
-74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-75                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-76            </intent-filter>
-77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-78                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\dd0f539eac32b83dcf62b190a66c2478\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-79            </intent-filter>
-80        </receiver>
-81    </application>
-82
-83</manifest>
+25-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:9:9-41
+26        android:supportsRtl="true"
+26-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:10:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.BookBud"
+28-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:11:9-45
+29        android:usesCleartextTraffic="true" >
+29-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:12:9-44
+30        <activity
+30-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:14:9-21:20
+31            android:name="edu.cit.colo.bookbud.SplashActivity"
+31-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:15:13-43
+32            android:exported="true" >
+32-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:16:13-36
+33            <intent-filter>
+33-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:17:13-20:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:18:17-69
+34-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:18:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:19:17-77
+36-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:19:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:23:9-25:40
+40            android:name="edu.cit.colo.bookbud.ForgotPasswordActivity"
+40-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:24:13-51
+41            android:exported="false" />
+41-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:25:13-37
+42        <activity
+42-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:27:9-29:40
+43            android:name="edu.cit.colo.bookbud.DashboardActivity"
+43-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:28:13-46
+44            android:exported="false" />
+44-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:29:13-37
+45        <activity
+45-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:31:9-33:40
+46            android:name="edu.cit.colo.bookbud.LoginActivity"
+46-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:32:13-42
+47            android:exported="false" />
+47-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:33:13-37
+48        <activity
+48-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:35:9-37:40
+49            android:name="edu.cit.colo.bookbud.RegisterActivity"
+49-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:36:13-45
+50            android:exported="false" />
+50-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:37:13-37
+51        <activity
+51-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:39:9-41:40
+52            android:name="edu.cit.colo.bookbud.GetStartedActivity"
+52-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:40:13-47
+53            android:exported="false" />
+53-->C:\Users\Nicoj\OneDrive\Desktop\IT342-Colo-BookBud\mobile\BookBud\app\src\main\AndroidManifest.xml:41:13-37
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+57            android:authorities="edu.cit.colo.bookbud.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Nicoj\.gradle\caches\transforms-3\a656771cf948c9ec19d69d3e0f861a8e\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Nicoj\.gradle\caches\transforms-3\74800ee21692f7a1064a378e4da48fbc\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Nicoj\.gradle\caches\transforms-3\74800ee21692f7a1064a378e4da48fbc\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Nicoj\.gradle\caches\transforms-3\74800ee21692f7a1064a378e4da48fbc\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+67                android:value="androidx.startup" />
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+68        </provider>
+69
+70        <receiver
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+71            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+72            android:directBootAware="false"
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+73            android:enabled="true"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+74            android:exported="true"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+75            android:permission="android.permission.DUMP" >
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+77                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+80                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+83                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+86                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Nicoj\.gradle\caches\transforms-3\cbda150fd9b9587f0b835e004e2f0125\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+87            </intent-filter>
+88        </receiver>
+89    </application>
+90
+91</manifest>

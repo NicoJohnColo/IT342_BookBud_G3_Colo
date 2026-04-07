@@ -1,15 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BookBud</string>
+    <string name="app_name">BOOKBUD</string>
     <string name="tagline">Read more for less</string>
-    <string name="get_started">Get Started</string>
+
+    <!-- Auth -->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_description">Enter your email and we\'ll send you a reset link</string>
+    <string name="email_label">Email</string>
+    <string name="send">SEND</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="sign_in">Sign in</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
-    <string name="name">Name</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="have_account_login">Already have an account? Login</string>
-    <string name="no_account_register">No account yet - Register</string>
-    <string name="welcome_back">Welcome back</string>
+    <string name="no_account_register">Don\'t have an account?</string>
+    <string name="have_account_login">Already have an account?</string>
+
+    <!-- Get Started -->
+    <string name="get_started_image_description">Stack of books with plant decoration</string>
+
+    <!-- Dashboard -->
     <string name="featured_books">Featured Books</string>
+    <string name="recently_listed">Recently Listed</string>
+    <string name="see_all">See all →</string>
+    <string name="good_morning">Good morning ☀️</string>
 </resources>

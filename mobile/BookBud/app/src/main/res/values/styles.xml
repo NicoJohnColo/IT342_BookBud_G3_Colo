@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Appearances -->
+    <style name="TextAppearance.BookBud.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_dark</item>
+    </style>
+
+    <style name="TextAppearance.BookBud.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_dark</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="ButtonStyle.BookBud" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.LabelLarge</item>
+        <item name="android:textColor">@color/color_dark</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="rippleColor">@color/color_primary_light</item>
+    </style>
+
+    <style name="ButtonStyle.BookBud.Primary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@color/color_primary</item>
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.LabelLarge</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+    </style>
+
+    <style name="ButtonStyle.BookBud.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.LabelLarge</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="strokeColor">@color/color_primary</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="CardStyle.BookBud" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/radius_md</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/color_white</item>
+        <item name="strokeColor">@color/color_gray_200</item>
+    </style>
+
+    <!-- Input Text Styles -->
+    <style name="EditTextStyle.BookBud" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textAppearance">@style/TextAppearance.BookBud.BodyMedium</item>
+        <item name="android:textColor">@color/color_dark</item>
+        <item name="android:hint">@string/app_name</item>
+        <item name="android:textColorHint">@color/color_gray_400</item>
+    </style>
+
+    <!-- Divider Styles -->
+    <style name="DividerStyle" parent="DividerStyle.BookBud" />
+
+    <style name="DividerStyle.BookBud">
+        <item name="android:background">@color/color_gray_200</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- Spacer Dimensions for common layouts -->
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_extra_large">24dp</dimen>
+
+    <!-- Elevation values -->
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_xl">16dp</dimen>
+</resources>
